@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spot the Difference – Al Rushed American Private School</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="school-header">
+      <div class="header-inner">
+        <div class="header-left">
+          <span class="flag-img" role="img" aria-label="UAE flag" title="UAE">🇦🇪</span>
+          <div class="school-logo" aria-hidden="true">AR</div>
+        </div>
+        <div class="header-text">
+          <div class="en">
+            Government of Sharjah | Sharjah Private Education Authority | Al Rushed American Private School
+          </div>
+          <div class="ar">
+            حكومــــــــــة الشارقـــــــــة | هيئة الشارقة للتعليم الخاص | مدرسة الرشد الأمريكية الخاصة
+          </div>
+        </div>
+        <div class="header-right"></div>
+      </div>
+    </header>
+
+    <div class="api-strip">
+      <div class="api-inner">
+        <span>Sharjah weather</span>
+        <span id="wxLine" class="muted">Loading…</span>
+        <span>|</span>
+        <span>Tip</span>
+        <span id="tipLine" class="muted">Loading…</span>
+        <button type="button" class="btn btn-soft" id="refreshApisBtn" title="Refresh weather and tip">↻ Refresh tips</button>
+      </div>
+    </div>
+
+    <div class="game-title-bar">🔍 Spot the Difference – Find 5 Hidden Differences!</div>
+
+    <div class="controls">
+      <div class="ctrl-group">
+        <label for="diffSel">Difficulty:</label>
+        <select id="diffSel" aria-label="Difficulty">
+          <option value="easy">😊 Easy</option>
+          <option value="medium" selected>🤔 Medium</option>
+          <option value="hard">😤 Hard</option>
+        </select>
+      </div>
+      <div class="ctrl-group">
+        <label for="puzzleSel">Scene:</label>
+        <select id="puzzleSel" aria-label="Puzzle scene"></select>
+      </div>
+      <button type="button" class="btn btn-green" id="newGameBtn">🎮 New Game</button>
+      <button type="button" class="btn btn-hint" id="hintBtn">💡 Hint</button>
+      <button type="button" class="btn btn-next" id="nextBtn" hidden>▶ Next Round</button>
+      <div class="stat-pill">Round: <span id="roundNum">1</span></div>
+      <div class="stat-pill">Found: <span id="foundNum">0</span> / 5</div>
+      <div class="stat-pill">Score: <span id="scoreNum">0</span></div>
+      <div class="stat-pill">⏱ <span id="timerNum">0</span> s</div>
+    </div>
+
+    <main class="game-area">
+      <p class="instructions">
+        Tap the spot where the two pictures differ (same location on both sides). Find all 5 to win!
+      </p>
+      <div class="canvases-wrap">
+        <div class="canvas-box">
+          <div class="canvas-label">📷 Original</div>
+          <div class="img-stage" id="stageLeft">
+            <img id="imgLeft" alt="Original scene" width="800" height="600" decoding="async" />
+            <canvas class="markers" id="markerLeft" aria-hidden="true"></canvas>
+          </div>
+        </div>
+        <div class="canvas-box">
+          <div class="canvas-label">🔍 Find the Differences</div>
+          <div class="img-stage" id="stageRight">
+            <img id="imgRight" alt="Scene with differences" width="800" height="600" decoding="async" />
+            <canvas class="markers" id="markerRight" aria-hidden="true"></canvas>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="diff-tracker" id="diffTracker" aria-live="polite"></div>
+
+    <div class="celebration" id="cel">
+      <div class="cel-card">
+        <div class="confetti-wrap" id="confettiWrap"></div>
+        <h2>🎉 Amazing!</h2>
+        <p>You found all 5 differences!</p>
+        <p id="celMsg"></p>
+        <p id="celApi" class="cel-api" hidden></p>
+        <button type="button" class="btn btn-green" id="celNextBtn">▶ Next Round</button>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <footer class="site-footer">
+      🎮 ICT Department – Made with ❤️ for Al Rushed Students | Spot the Difference | Weather: Open-Meteo · Tips:
+      Advice Slip · Fun: JokeAPI (safe mode)
+    </footer>
+
+    <script src="puzzles-data.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

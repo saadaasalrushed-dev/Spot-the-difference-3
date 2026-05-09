@@ -1,0 +1,118 @@
+{
+  "puzzles": [
+    {
+      "id": "park",
+      "title": "\ud83c\udf33 Park Picnic",
+      "left": "assets/puzzles/park_left.png",
+      "right": "assets/puzzles/park_right.png",
+      "differences": [
+        {
+          "x": 0.71,
+          "y": 0.07167,
+          "w": 0.13,
+          "h": 0.17333
+        },
+        {
+          "x": 0.55,
+          "y": 0.095,
+          "w": 0.1,
+          "h": 0.09333
+        },
+        {
+          "x": 0.41875,
+          "y": 0.425,
+          "w": 0.2125,
+          "h": 0.245
+        },
+        {
+          "x": 0.535,
+          "y": 0.73667,
+          "w": 0.02,
+          "h": 0.05333
+        },
+        {
+          "x": 0.31875,
+          "y": 0.35,
+          "w": 0.1125,
+          "h": 0.225
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "title": "\ud83c\udf73 Kitchen Morning",
+      "left": "assets/puzzles/kitchen_left.png",
+      "right": "assets/puzzles/kitchen_right.png",
+      "differences": [
+        {
+          "x": 0.1125,
+          "y": 0.11667,
+          "w": 0.0875,
+          "h": 0.3
+        },
+        {
+          "x": 0.7,
+          "y": 0.2,
+          "w": 0.2,
+          "h": 0.5
+        },
+        {
+          "x": 0.48125,
+          "y": 0.49667,
+          "w": 0.04375,
+          "h": 0.06333
+        },
+        {
+          "x": 0.6175,
+          "y": 0.515,
+          "w": 0.0225,
+          "h": 0.09667
+        },
+        {
+          "x": 0.53,
+          "y": 0.15667,
+          "w": 0.115,
+          "h": 0.15333
+        }
+      ]
+    },
+    {
+      "id": "birthday",
+      "title": "\ud83c\udf82 Birthday Party",
+      "left": "assets/puzzles/birthday_left.png",
+      "right": "assets/puzzles/birthday_right.png",
+      "differences": [
+        {
+          "x": 0.4825,
+          "y": 0.33333,
+          "w": 0.035,
+          "h": 0.05333
+        },
+        {
+          "x": 0.3,
+          "y": 0.23667,
+          "w": 0.1025,
+          "h": 0.2
+        },
+        {
+          "x": 0.15,
+          "y": 0.7,
+          "w": 0.1125,
+          "h": 0.15
+        },
+        {
+          "x": 0.465,
+          "y": 0.11333,
+          "w": 0.0525,
+          "h": 0.09
+        },
+        {
+          "x": 0.82375,
+          "y": 0.51,
+          "w": 0.0675,
+          "h": 0.09
+        }
+      ]
+    }
+  ]
+}
